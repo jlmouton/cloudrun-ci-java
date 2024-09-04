@@ -1,0 +1,13 @@
+steps:
+- name: 'gcr.io/cloud-builders/gcloud'
+  args:
+  - 'run'
+  - 'deploy'
+  - 'cloudrun-ci-java'
+  - '--source'
+  - '.'
+  - '--platform'
+  - 'managed'
+  - '--allow-unauthenticated'
+  - '--region'
+  - 'us-central1'
